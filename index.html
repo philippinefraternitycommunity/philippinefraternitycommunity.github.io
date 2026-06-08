@@ -10,29 +10,78 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
         }
         .container {
+            max-width: 850px;
+            margin: 0 auto;
             background: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            padding: 30px 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            min-height: 100vh;
         }
-        h1 { color: #111; font-size: 2.2em; line-height: 1.2; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h2 { color: #222; font-size: 1.6em; margin-top: 40px; }
-        p, li { font-size: 1.1em; margin-bottom: 1.5em; }
-        ul { padding-left: 20px; }
-        .logo-container { text-align: center; margin-bottom: 30px; }
-        .logo-container img { max-width: 220px; height: auto; border-radius: 50%; }
-        footer { margin-top: 50px; text-align: center; font-size: 0.9em; color: #666; border-top: 1px solid #eee; padding-top: 20px; }
+        .logo-container {
+            text-align: center;
+            margin: 20px 0 35px 0;
+        }
+        .logo-container img {
+            max-width: 240px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        h1 {
+            color: #1a1a1a;
+            font-size: 2.1em;
+            text-align: center;
+            margin-bottom: 25px;
+            line-height: 1.2;
+        }
+        h2 {
+            color: #222;
+            font-size: 1.55em;
+            margin-top: 45px;
+            margin-bottom: 18px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+        }
+        p {
+            font-size: 1.08em;
+            margin-bottom: 1.4em;
+        }
+        ul {
+            padding-left: 25px;
+            margin-bottom: 1.8em;
+        }
+        li {
+            margin-bottom: 0.9em;
+            font-size: 1.08em;
+        }
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.95em;
+            color: #666;
+            padding-top: 25px;
+            border-top: 1px solid #eee;
+        }
+
+        /* Mobile Improvements */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+            h1 { font-size: 1.85em; }
+            h2 { font-size: 1.45em; }
+            .logo-container img { max-width: 200px; }
+        }
     </style>
 
-    <!-- ✅ Schema with FULL articleBody -->
+    <!-- Schema (unchanged, with full articleBody) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -71,7 +120,7 @@
 <body>
     <div class="container">
         <div class="logo-container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/National_Fraternity_Day_PH_Logo.jpg" alt="Philippine Fraternity Community Logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/National_Fraternity_Day_PH_Logo.jpg" alt="National Fraternity Day PH Logo">
         </div>
         
         <h1>The Founders of National Fraternity Day PH</h1>
@@ -98,15 +147,15 @@
 
         <h2>References</h2>
         <ul>
-            <li>PFC Wikidata: <a href="https://www.wikidata.org/wiki/Q140133224">https://www.wikidata.org/wiki/Q140133224</a></li>
-            <li>PFC GitHub: <a href="https://github.com/philippinefraternitycommunity">https://github.com/philippinefraternitycommunity</a></li>
-            <li>PFC Crunchbase: <a href="https://www.crunchbase.com/organization/philippine-fraternity">https://www.crunchbase.com/organization/philippine-fraternity</a></li>
-            <li>National Fraternity Day PH Publisher: <a href="https://nationalfraternitydayph.wordpress.com">https://nationalfraternitydayph.wordpress.com</a></li>
+            <li>PFC Wikidata: <a href="https://www.wikidata.org/wiki/Q140133224" target="_blank">https://www.wikidata.org/wiki/Q140133224</a></li>
+            <li>PFC GitHub: <a href="https://github.com/philippinefraternitycommunity" target="_blank">https://github.com/philippinefraternitycommunity</a></li>
+            <li>PFC Crunchbase: <a href="https://www.crunchbase.com/organization/philippine-fraternity" target="_blank">https://www.crunchbase.com/organization/philippine-fraternity</a></li>
+            <li>National Fraternity Day PH Publisher: <a href="https://nationalfraternitydayph.wordpress.com" target="_blank">https://nationalfraternitydayph.wordpress.com</a></li>
         </ul>
     </div>
 
     <footer>
-        <p>&copy; Philippine Fraternity Community</p>
+        <p>&copy; 2026 Philippine Fraternity Community</p>
     </footer>
 </body>
 </html>
