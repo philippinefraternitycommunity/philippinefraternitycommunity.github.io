@@ -8,6 +8,9 @@
     <link rel="canonical" href="https://philippinefraternitycommunity.github.io" />
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.7;
@@ -20,49 +23,53 @@
             max-width: 850px;
             margin: 0 auto;
             background: #fff;
-            padding: 30px 20px;
+            padding: 25px 20px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
             min-height: 100vh;
         }
         .logo-container {
             text-align: center;
-            margin: 20px 0 35px 0;
+            margin: 15px 0 30px 0;
         }
         .logo-container img {
-            max-width: 240px;
+            max-width: 100%;
+            width: 240px;
             height: auto;
             border-radius: 50%;
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            display: block;
+            margin: 0 auto;
         }
         h1 {
             color: #1a1a1a;
-            font-size: 2.1em;
+            font-size: 2.0em;
             text-align: center;
-            margin-bottom: 25px;
+            margin: 20px 0 25px 0;
             line-height: 1.2;
         }
         h2 {
             color: #222;
             font-size: 1.55em;
             margin-top: 45px;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
             border-bottom: 2px solid #eee;
             padding-bottom: 8px;
         }
         p {
             font-size: 1.08em;
-            margin-bottom: 1.4em;
+            margin-bottom: 1.35em;
+            text-align: justify;
         }
         ul {
-            padding-left: 25px;
+            padding-left: 22px;
             margin-bottom: 1.8em;
         }
         li {
-            margin-bottom: 0.9em;
+            margin-bottom: 0.85em;
             font-size: 1.08em;
         }
         footer {
-            margin-top: 60px;
+            margin-top: 70px;
             text-align: center;
             font-size: 0.95em;
             color: #666;
@@ -70,18 +77,18 @@
             border-top: 1px solid #eee;
         }
 
-        /* Mobile Improvements */
+        /* Mobile Optimization */
         @media (max-width: 600px) {
             .container {
                 padding: 20px 15px;
             }
-            h1 { font-size: 1.85em; }
+            h1 { font-size: 1.75em; }
             h2 { font-size: 1.45em; }
-            .logo-container img { max-width: 200px; }
+            .logo-container img { width: 200px; }
         }
     </style>
 
-    <!-- Schema (unchanged, with full articleBody) -->
+    <!-- Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
