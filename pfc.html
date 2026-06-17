@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Fraternity Day PH</title>
+    
+    <!-- JavaScript Automation para sa Permanenteng Event Schema sa Google -->
+    <script>
+        (function() {
+            const ngayon = new Date();
+            let kasalukuyangTaon = ngayon.getFullYear();
+            
+            // Itakda ang deadline ng kasalukuyang taon (November 19, 11:59:59 PM)
+            const deadlineNgayon = new Date(`${kasalukuyangTaon}-11-19T23:59:59+08:00`);
+            
+            // Kung lumipas na ang November 19 ngayong taon, i-target na ang susunod na taon para sa Google Search
+            if (ngayon > deadlineNgayon) {
+                kasalukuyangTaon += 1;
+            }
+
+            // Pagbuo ng Dynamic Schema Object
+            const eventSchema = {
+              "@context": "https://schema.org",
+              "@type": "Event",
+              "name": "National Fraternity Day PH",
+              "alternateName": "National Fraternity Day",
+              "identifier": "kg:g/11z67jmsv5",
+              "description": "An annual observance in the Philippines every November 19, dedicated to promoting peace, unity, and cooperation among Greek-letter organizations.",
+              "startDate": `${kasalukuyangTaon}-11-19T08:00:00+08:00`,
+              "endDate": `${kasalukuyangTaon}-11-19T23:59:59+08:00`,
+              "eventStatus": "https://schema.org",
+              "eventAttendanceMode": "https://schema.org",
+              "location": {
+                "@type": "Place",
+                "name": "Philippines",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Manila",
+                  "addressRegion": "NCR",
+                  "addressCountry": "PH"
+                }
+              },
+              "image": [
+                "https://upload.wikimedia.org/wikipedia/commons/e/e5/National_Fraternity_Day_PH_Logo.jpg"
+              ],
+              "url": "https://philippinefraternitycommunity.github.io",
+              "mainEntityOfPage": "https://philippinefraternitycommunity.github.io",
+              "sameAs": [
+                "https://nationalfraternitydayph-ui.github.io",
+                "https://frathistoryrankingsph.blogspot.com",
+                "https://www.wikidata.org/wiki/Q139882769",
+                "https://www.quora.com/profile/National-Fraternity-Day-PH",
+                "https://www.change.org/p/support-national-fraternity-day-ph-every-november-19",
+                "https://wikialpha.co/wiki/National_Fraternity_Day_PH",
+                "https://www.reddit.com/user/fraternityph/",
+                "https://www.youtube.com/@bostv123yt",
+                "https://www.facebook.com/Bostv123",
+                "https://www.facebook.com/NationalFraternityDayPH",
+                "https://www.tiktok.com/@bostv123",
+                "https://ph.linkedin.com/in/nationalfraternitydayph",
+                "https://x.com/nationalfratday",
+                "https://www.instagram.com/nationalfraternitydayph",
+                "https://www.crunchbase.com/organization/national-fraternity-day-ph",
+                "https://www.f6s.com/national-fraternity-day-ph",
+                "https://www.threads.com/@nationalfraternitydayph"
+              ],
+              "organizer": {
+                "@type": "Organization",
+                "name": "BOS TV / fraternityph",
+                "url": "https://www.facebook.com/Bostv123"
+              },
+              "offers": {
+                "@type": "Offer",
+                "url": "https://nationalfraternitydayph.wordpress.com/",
+                "price": "0",
+                "priceCurrency": "PHP",
+                "availability": "https://schema.org",
+                "validFrom": `${kasalukuyangTaon - 1}-11-19T00:00:00+08:00`
+              },
+              "performer": {
+                "@type": "Organization",
+                "name": "Philippine Fraternity Community",
+                "url": "https://philippinefraternitycommunity.github.io"
+              }
+            };
+
+            // Pag-inject ng Schema sa Head tag para mabasa ng Google Search bots
+            const scriptTag = document.createElement('script');
+            scriptTag.type = 'application/ld+json';
+            scriptTag.text = JSON.stringify(eventSchema, null, 2);
+            document.head.appendChild(scriptTag);
+        })();
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 25px; color: #333; }
+        .wrapper { max-width: 750px; margin: auto; }
+        h1 { color: #1a0dab; margin-bottom: 5px; }
+        .details-box { background: #f9f9f9; padding: 15px; border-left: 5px solid #1a0dab; margin: 20px 0; }
+        a { color: #1a0dab; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>National Fraternity Day PH</h1>
+        <p>Welcome to the official portal for the annual National Fraternity Day PH, celebrated nationwide across the Philippines every November 19.</p>
+        
+        <div class="details-box">
+            <p><strong>Event:</strong> National Fraternity Day PH</p>
+            <p><strong>Schedule:</strong> Every November 19 (Annual Observance)</p>
+            <p><strong>Community:</strong> Philippine Fraternity Community</p>
+            <p><strong>Core Mission:</strong> Peace, Unity, and Civic Cooperation among Greek-letter organizations.</p>
+        </div>
+
+        <p>This space acts as the repository for interconnected web metadata, ensuring the history and activities of our unified community are accurately structured for search platforms.</p>
+        
+        <p>Read all our official updates, articles, and community stories at our main hub: 
+           <a href="https://nationalfraternitydayph.wordpress.com/" target="_blank">National Fraternity Day PH WordPress</a>.
+        </p>
+    </div>
+</body>
+</html>
