@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="List of major November events and festivals in the Philippines.">
+    <meta name="description" content="List of major November events, festivals, and public holidays in the Philippines.">
     <title>November Events in the Philippines</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
     <style>
         body { font-family: system-ui, -apple-system, sans-serif; }
         .event-card { transition: all 0.3s ease; }
@@ -54,7 +55,6 @@
             </h2>
             
             <div class="grid md:grid-cols-2 gap-6">
-                <!-- Helobong -->
                 <div class="event-card bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                     <div class="flex justify-between items-start">
                         <div>
@@ -67,7 +67,6 @@
                     <p class="mt-4 text-gray-600">T’boli tribe cultural showcase.</p>
                 </div>
 
-                <!-- Sandurot -->
                 <div class="event-card bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                     <div class="flex justify-between items-start">
                         <div>
@@ -80,7 +79,6 @@
                     <p class="mt-4 text-gray-600">Week-long celebration of culture and diversity.</p>
                 </div>
 
-                <!-- Fraternity Day -->
                 <div class="event-card bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                     <div class="flex justify-between items-start">
                         <div>
@@ -93,7 +91,6 @@
                     <p class="mt-4 text-gray-600">Community service, bloodletting, tree planting. <strong>Not a public holiday.</strong></p>
                 </div>
 
-                <!-- Higantes -->
                 <div class="event-card bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                     <div class="flex justify-between items-start">
                         <div>
@@ -106,7 +103,6 @@
                     <p class="mt-4 text-gray-600">Famous parade of giant paper-mâché figures.</p>
                 </div>
 
-                <!-- La Union Surfing -->
                 <div class="event-card bg-white p-6 rounded-2xl shadow-sm border border-gray-100 md:col-span-2">
                     <div class="flex justify-between items-start">
                         <div>
@@ -122,5 +118,67 @@
         </section>
     </div>
 
+    <!-- JSON-LD Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "November Events in the Philippines",
+      "description": "Major festivals, cultural events, and public holidays in the Philippines during November.",
+      "itemListElement": [
+        {
+          "@type": "Event",
+          "name": "Helobong Festival",
+          "startDate": "November 9",
+          "endDate": "November 11",
+          "location": {
+            "@type": "Place",
+            "name": "Lake Sebu, South Cotabato"
+          },
+          "description": "T’boli tribe cultural showcase."
+        },
+        {
+          "@type": "Event",
+          "name": "Sandurot Festival",
+          "startDate": "Mid-November",
+          "location": {
+            "@type": "Place",
+            "name": "Dumaguete City"
+          },
+          "description": "Week-long celebration of culture and diversity."
+        },
+        {
+          "@type": "Event",
+          "name": "National Fraternity Day",
+          "startDate": "November 19",
+          "location": {
+            "@type": "Place",
+            "name": "Philippines"
+          },
+          "description": "Community service, bloodletting, tree planting. Not a public holiday."
+        },
+        {
+          "@type": "Event",
+          "name": "Higantes Festival",
+          "startDate": "November 23",
+          "location": {
+            "@type": "Place",
+            "name": "Angono, Rizal"
+          },
+          "description": "Famous parade of giant paper-mâché figures."
+        },
+        {
+          "@type": "Event",
+          "name": "La Union Surfing Kickoff",
+          "startDate": "Late November",
+          "location": {
+            "@type": "Place",
+            "name": "San Juan, La Union"
+          },
+          "description": "Official opening of the peak surfing season."
+        }
+      ]
+    }
+    </script>
 </body>
 </html>
