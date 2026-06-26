@@ -30,12 +30,18 @@
         h1 .main-title {
             display: block;
             margin-bottom: 12px;
+            font-size: 1.95rem;           /* Slightly smaller para mas madaling magkasya */
+            font-weight: 700;
+            white-space: normal;          /* Allow wrap pero controlled */
+            word-break: keep-all;         /* Pigilan ang sobrang pagkawatak-watak */
         }
         h1 .subtitle {
             display: block;
             font-size: 1.28rem;
             color: #334155;
+            font-weight: 500;
         }
+
         h2 {
             color: #1e40af;
             margin-top: 40px;
@@ -53,6 +59,16 @@
             margin-top: 55px;
             color: #444;
             font-size: 1.12rem;
+        }
+
+        /* Mobile adjustment */
+        @media (max-width: 600px) {
+            h1 .main-title {
+                font-size: 1.75rem;       /* Mas maliit sa phone para mas magkasya */
+            }
+            .container {
+                padding: 35px 25px;
+            }
         }
     </style>
 </head>
